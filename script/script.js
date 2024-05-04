@@ -2,7 +2,9 @@ function showOutput(output, text){
     let html = output + "<br>" + text;
     document.getElementById("outputBox").innerHTML=html;
 }
-
+function clearOutput(){
+    showOutput("","")
+}
 let date = new Date();
 let today = date.getDay();
 
